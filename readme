@@ -68,13 +68,13 @@ MPProductDetailScreen
 ✅ Arquitetura limpa:
 
 Copiar código
-components/
-pages/
-stores/
-providers/
-services/
-navigation/
-assets/
+components/  
+pages/  
+stores/  
+providers/  
+services/  
+navigation/  
+assets/  
 🚀 Execução do Aplicativo (15%)
 ✅ Interface responsiva: funciona em portrait e landscape
 
@@ -165,3 +165,9 @@ Copiar código
 npx expo start
 ✨ Pronto!
 Agora é só escanear o QR Code com o app do Expo Go e aproveitar!
+
+👥 Autores
+Niguel Barros Ramos
+
+Pedro Valentim
+
