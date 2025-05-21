@@ -1,20 +1,24 @@
 🏍️ MP Moto Shop - Aplicativo de Venda de Motocicletas
-Um aplicativo mobile desenvolvido em React Native para venda de motocicletas premium, com funcionalidades de catálogo, busca, detalhes de produtos e carrinho de compras.
+Um aplicativo mobile desenvolvido em React Native para venda de motocicletas premium, com funcionalidades como catálogo, busca, detalhes de produtos e carrinho de compras.
 
 📋 Sobre o Projeto
 Este aplicativo foi desenvolvido como parte do trabalho CP2 da disciplina de Desenvolvimento Mobile.
 
 O MP Moto Shop permite aos usuários:
+
 ✅ Navegar por um catálogo de motocicletas premium
+
 ✅ Visualizar detalhes dos produtos
+
 ✅ Adicionar itens ao carrinho
-✅ Gerenciar as compras
+
+✅ Gerenciar suas compras
 
 ✅ Requisitos Atendidos
 🧭 Navegação (10%)
-✅ Menu de navegação implementado com React Navigation (Bottom Tab Navigator)
+✅ Menu implementado com React Navigation (Bottom Tab Navigator)
 
-✅ Duas telas principais: Catálogo de Motocicletas e Carrinho de Compras
+✅ Duas telas principais: Catálogo e Carrinho de Compras
 
 ✅ Estado mantido durante a navegação com Context API
 
@@ -30,19 +34,19 @@ O MP Moto Shop permite aos usuários:
 ✅ Dados armazenados em JSON local
 
 🛒 Carrinho de Compras (20%)
-✅ Sistema de carrinho: adicionar produtos da lista
+✅ Sistema para adicionar produtos da lista
 
-✅ Badge no menu mostrando quantidade de itens no carrinho
+✅ Badge no menu mostrando a quantidade de itens no carrinho
 
 ✅ Remoção de itens diretamente no carrinho
 
 ✅ Controle de quantidade (adicionar/remover)
 
-✅ Dados do carrinho mantidos no estado global e persistidos com AsyncStorage
+✅ Dados do carrinho mantidos com Context API e persistência via AsyncStorage
 
 🗂️ Estrutura do Código (60%)
 ✍️ Código Próprio (30%)
-✅ Todos os métodos, funções e variáveis iniciadas com prefixo "MP" (iniciais dos membros do grupo)
+✅ Todos os métodos, funções e variáveis iniciam com prefixo "MP" (iniciais dos membros do grupo)
 
 🗃️ Organização do Código (15%)
 ✅ Componentes reutilizáveis:
@@ -76,10 +80,11 @@ services/
 navigation/  
 assets/  
 🚀 Execução do Aplicativo (15%)
-✅ Interface responsiva: funciona em portrait e landscape
+✅ Interface responsiva: funciona nos modos portrait e landscape
 
 ✅ Aplicativo roda nativamente em Android
-(📂 APK disponível na pasta /build)
+
+📂 APK disponível na pasta /build
 
 🛠️ Tecnologias Utilizadas
 React Native
@@ -123,7 +128,7 @@ Adição/remoção de produtos
 
 Controle de quantidade
 
-Persistência de dados com AsyncStorage
+Persistência com AsyncStorage
 
 Cálculo automático do total
 
@@ -142,7 +147,7 @@ npm ou yarn
 
 Expo CLI
 
-Android Studio (para emulador) ou dispositivo físico
+Android Studio (emulador) ou dispositivo físico
 
 ✅ Passos para Instalação
 Clone o repositório:
@@ -167,7 +172,7 @@ npx expo start
 Agora é só escanear o QR Code com o app do Expo Go e aproveitar!
 
 👥 Autores
-Niguel Barros Ramos
+Miguel Barros Ramos
 
 Pedro Valentim
 
