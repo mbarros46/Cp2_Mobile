@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Capacete Preto",
+    "description": "Capacete de moto resistente com viseira.",
+    "image": "capacete.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Luva Térmica",
+    "description": "Luva térmica ideal para pilotar em baixas temperaturas.",
+    "image": "luva.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Jaqueta Impermeável",
+    "description": "Jaqueta para motociclistas resistente à água.",
+    "image": "jaqueta.jpg"
+  }
+]
