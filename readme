@@ -1,0 +1,97 @@
+MP Moto Shop - Aplicativo de Venda de Motocicletas
+Um aplicativo mobile desenvolvido em React Native para venda de motocicletas premium, com funcionalidades de catálogo, busca, detalhes de produtos e carrinho de compras.
+
+Sobre o Projeto
+Este aplicativo foi desenvolvido como parte do trabalho CP2 da disciplina de Desenvolvimento Mobile. O MP Moto Shop permite aos usuários navegar por um catálogo de motocicletas premium, visualizar detalhes, adicionar produtos ao carrinho e gerenciar suas compras.
+
+Requisitos Atendidos
+Navegação (10%)
+✅ Menu de navegação implementado usando React Navigation (Bottom Tab Navigator)
+✅ Duas telas principais: Catálogo de Motocicletas e Carrinho de Compras
+✅ Estado mantido durante a navegação através do Context API
+Lista de Produtos (10%)
+✅ Lista com rolagem (FlatList) para visualizar as motocicletas disponíveis
+✅ Busca implementada por título E descrição dos produtos
+✅ Cada item da lista exibe imagem, título, descrição e preço
+✅ Tela de detalhes do produto com imagem ampliada e especificações técnicas
+✅ Dados dos produtos armazenados em JSON local
+Carrinho de Compras (20%)
+✅ Sistema de carrinho implementado permitindo adicionar produtos da lista
+✅ Badge no item de navegação mostrando a quantidade de itens no carrinho
+✅ Funcionalidade de remoção de itens diretamente do carrinho
+✅ Controle de quantidade de itens (adicionar/remover) no carrinho
+✅ Dados do carrinho salvos em estado na aplicação e persistidos com AsyncStorage
+Estrutura do Código (60%)
+Código Próprio (30%)
+✅ Todos os métodos, funções e variáveis próprias inicializadas com o prefixo "MP" (iniciais dos membros do grupo)
+Organização do Código (15%)
+✅ Código organizado em componentes reutilizáveis:
+MPProductCard
+MPCartBadge
+MPHeader
+MPThemeProvider
+✅ Telas implementadas:
+MPProductListScreen
+MPCartScreen
+MPProductDetailScreen
+✅ Estado global gerenciado através do Context API (CartContext e ThemeContext)
+✅ Arquitetura limpa implementada com separação em:
+components/
+pages/
+stores/
+providers/
+services/
+navigation/
+assets/
+Execução do Aplicativo (15%)
+✅ Interface responsiva funcionando em orientações portrait e landscape
+✅ Aplicativo roda nativamente em Android (APK disponível na pasta /build)
+Tecnologias Utilizadas
+React Native
+Expo
+React Navigation
+AsyncStorage
+Context API
+Estrutura do Projeto
+MBMobileAppMotos/
+├── assets/                  # Imagens e recursos estáticos
+├── src/
+│   ├── components/          # Componentes reutilizáveis
+│   ├── navigation/          # Configuração de navegação
+│   ├── pages/               # Telas do aplicativo
+│   ├── providers/           # Provedores de contexto
+│   ├── services/            # Serviços e APIs
+│   └── stores/              # Gerenciamento de estado
+├── App.js                   # Ponto de entrada do aplicativo
+├── app.json                 # Configuração do Expo
+└── package.json             # Dependências do projeto
+Funcionalidades
+Catálogo de Motocicletas
+
+Listagem de motocicletas premium
+Busca por título e descrição
+Visualização de detalhes do produto
+Tema Escuro
+
+Interface com tema escuro para melhor experiência visual
+Carrinho de Compras
+
+Adição/remoção de produtos
+Controle de quantidade
+Persistência de dados com AsyncStorage
+Cálculo automático do total
+Detalhes do Produto
+
+Visualização ampliada da imagem
+Especificações técnicas
+Botão para adicionar ao carrinho
+Instalação e Execução
+Pré-requisitos
+Node.js (v14 ou superior)
+npm ou yarn
+Expo CLI
+Android Studio (para emulador Android) ou dispositivo físico
+Passos para Instalação
+Clone o repositório:
+git clone https://github.com/seu-usuario/MBMobileAppMotos.git
+cd MBMobileAppMotos
