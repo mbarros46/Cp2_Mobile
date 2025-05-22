@@ -172,6 +172,7 @@ npx expo start
 Agora é só escanear o QR Code com o app do Expo Go e aproveitar!
 
 👥 Autores
+
 Miguel Barros Ramos
 
 Pedro Valentim
