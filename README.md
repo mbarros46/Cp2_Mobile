@@ -1,4 +1,4 @@
-# 🏍️ MP Moto Shop – Aplicativo Mobile de Venda de Motocicletas Premium
+# 🏍️  Moto Shop – Aplicativo Mobile de Venda de Motocicletas Premium
 
 Aplicativo mobile desenvolvido em React Native, focado na venda de motocicletas premium. Disponibiliza catálogo, busca avançada, visualização detalhada dos produtos e sistema completo de carrinho de compras.
 
