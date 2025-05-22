@@ -106,4 +106,19 @@ cd MPMobileAppMotos
 
 npm install
 npx expo start --tunnel
- 
+```
+
+---
+
+## 👥 Autores
+
+Miguel Barros Ramos
+
+Pedro Valentim
+
+Larissa Muniz
+
+
+
+
+
