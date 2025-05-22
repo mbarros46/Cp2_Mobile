@@ -1,181 +1,109 @@
-🏍️ MP Moto Shop - Aplicativo de Venda de Motocicletas
-Um aplicativo mobile desenvolvido em React Native para venda de motocicletas premium, com funcionalidades como catálogo, busca, detalhes de produtos e carrinho de compras.
+# 🏍️ MP Moto Shop – Aplicativo Mobile de Venda de Motocicletas Premium
 
-📋 Sobre o Projeto
-Este aplicativo foi desenvolvido como parte do trabalho CP2 da disciplina de Desenvolvimento Mobile.
+Aplicativo mobile desenvolvido em React Native, focado na venda de motocicletas premium. Disponibiliza catálogo, busca avançada, visualização detalhada dos produtos e sistema completo de carrinho de compras.
 
-O MP Moto Shop permite aos usuários:
+---
 
-✅ Navegar por um catálogo de motocicletas premium
+## 📋 Sobre o Projeto
 
-✅ Visualizar detalhes dos produtos
+Este aplicativo foi desenvolvido para a entrega CP2 da disciplina de Desenvolvimento Mobile, com foco em arquitetura limpa, usabilidade e persistência local.
 
-✅ Adicionar itens ao carrinho
+---
 
-✅ Gerenciar suas compras
+## 🎯 Funcionalidades Principais
 
-✅ Requisitos Atendidos
-🧭 Navegação (10%)
-✅ Menu implementado com React Navigation (Bottom Tab Navigator)
+- Navegação intuitiva entre catálogo de produtos e carrinho de compras.  
+- Busca por título **e** descrição dos produtos.  
+- Visualização detalhada com imagem ampliada e especificações técnicas.  
+- Adição, remoção e controle de quantidade de produtos no carrinho.  
+- Badge na navegação mostrando quantidade total no carrinho.  
+- Persistência local do carrinho via AsyncStorage.  
+- Interface responsiva, com suporte a modos portrait e landscape.  
+- Aplicativo nativo para Android (APK disponível).
 
-✅ Duas telas principais: Catálogo e Carrinho de Compras
+---
 
-✅ Estado mantido durante a navegação com Context API
+## ✅ Requisitos Atendidos
 
-📦 Lista de Produtos (10%)
-✅ Lista com rolagem usando FlatList
+### Navegação (10%)
 
-✅ Busca por título e descrição
+- Menu implementado com React Navigation (Bottom Tab Navigator).  
+- Duas telas principais: Catálogo (Esfihas) e Carrinho.  
+- Estado global mantido via Context API.
 
-✅ Cada item exibe: imagem, título, descrição e preço
+### Lista de Produtos (10%)
 
-✅ Tela de detalhes com imagem ampliada e especificações técnicas
+- Lista com scroll usando FlatList.  
+- Busca por título e descrição simultaneamente.  
+- Itens com imagem, título, descrição e preço.  
+- Tela de detalhes com imagem ampliada e informações técnicas.  
+- Dados carregados de JSON local e salvos em AsyncStorage.
 
-✅ Dados armazenados em JSON local
+### Carrinho de Compras (20%)
 
-🛒 Carrinho de Compras (20%)
-✅ Sistema para adicionar produtos da lista
+- Sistema completo para gerenciar produtos adicionados.  
+- Badge no menu mostrando quantidade total de itens.  
+- Remoção e controle de quantidade direto na tela do carrinho.  
+- Estado persistente usando Context API e AsyncStorage.
 
-✅ Badge no menu mostrando a quantidade de itens no carrinho
+### Código e Organização (60%)
 
-✅ Remoção de itens diretamente no carrinho
+- Todas as variáveis, funções e métodos começam com o prefixo **MP** (iniciais do grupo).  
+- Arquitetura limpa e organizada:  
+  - Componentes reutilizáveis: `MPProductCard`, `MPCartBadge`, `MPHeader`, `MPThemeProvider`  
+  - Telas: `MPProductListScreen`, `MPCartScreen`, `MPProductDetailScreen`  
+  - Estado global com Context API (`CartContext`, `ThemeContext`)  
+  - Estrutura de pastas:  
+    ```
+    components/
+    pages/
+    stores/
+    providers/
+    services/
+    navigation/
+    assets/
+    ```
+- UX funcional nos modos portrait e landscape.
 
-✅ Controle de quantidade (adicionar/remover)
+---
 
-✅ Dados do carrinho mantidos com Context API e persistência via AsyncStorage
+## 🛠️ Tecnologias Utilizadas
 
-🗂️ Estrutura do Código (60%)
-✍️ Código Próprio (30%)
-✅ Todos os métodos, funções e variáveis iniciam com prefixo "MP" (iniciais dos membros do grupo)
+- React Native  
+- Expo  
+- React Navigation  
+- AsyncStorage  
+- Context API  
 
-🗃️ Organização do Código (15%)
-✅ Componentes reutilizáveis:
+---
 
-MPProductCard
-
-MPCartBadge
-
-MPHeader
-
-MPThemeProvider
-
-✅ Telas implementadas:
-
-MPProductListScreen
-
-MPCartScreen
-
-MPProductDetailScreen
-
-✅ Estado global com Context API (CartContext e ThemeContext)
-
-✅ Arquitetura limpa:
-
-Copiar código
-components/  
-pages/  
-stores/  
-providers/  
-services/  
-navigation/  
-assets/  
-🚀 Execução do Aplicativo (15%)
-✅ Interface responsiva: funciona nos modos portrait e landscape
-
-✅ Aplicativo roda nativamente em Android
-
-📂 APK disponível na pasta /build
-
-🛠️ Tecnologias Utilizadas
-React Native
-
-Expo
-
-React Navigation
-
-AsyncStorage
-
-Context API
-
-🏗️ Estrutura do Projeto
-bash
-Copiar código
-MBMobileAppMotos/
-├── assets/                  # Imagens e recursos estáticos
+## 🚀 Estrutura do Projeto
+ ```
+   MPMobileAppMotos/
+├── assets/ # Imagens e recursos estáticos
 ├── src/
-│   ├── components/          # Componentes reutilizáveis
-│   ├── navigation/          # Configuração de navegação
-│   ├── pages/               # Telas do aplicativo
-│   ├── providers/           # Provedores de contexto
-│   ├── services/            # Serviços e APIs
-│   └── stores/              # Gerenciamento de estado
-├── App.js                   # Ponto de entrada do aplicativo
-├── app.json                 # Configuração do Expo
-└── package.json             # Dependências do projeto
-🚀 Funcionalidades
-🏍️ Catálogo de Motocicletas
-Listagem de motocicletas premium
+│ ├── components/ # Componentes reutilizáveis
+│ ├── navigation/ # Configuração de navegação
+│ ├── pages/ # Telas do app
+│ ├── providers/ # Providers de contexto
+│ ├── services/ # Serviços e APIs
+│ └── stores/ # Gerenciamento de estado
+├── App.js # Ponto de entrada
+├── app.json # Configuração Expo
+└── package.json # Dependências do projeto
 
-Busca por título e descrição
+```
 
-Visualização de detalhes do produto
+---
 
-🌙 Tema Escuro
-Interface com modo escuro para melhor experiência visual
+## ⚙️ Instalação e Execução
 
-🛒 Carrinho de Compras
-Adição/remoção de produtos
+### Passos para rodar localmente
 
-Controle de quantidade
+```bash
+git clone https://github.com/seu-usuario/MPMobileAppMotos.git
+cd MPMobileAppMotos
 
-Persistência com AsyncStorage
-
-Cálculo automático do total
-
-🔍 Detalhes do Produto
-Visualização ampliada da imagem
-
-Especificações técnicas
-
-Botão para adicionar ao carrinho
-
-⚙️ Instalação e Execução
-✅ Pré-requisitos
-Node.js (v14 ou superior)
-
-npm ou yarn
-
-Expo CLI
-
-Android Studio (emulador) ou dispositivo físico
-
-✅ Passos para Instalação
-Clone o repositório:
-
-bash
-Copiar código
-git clone https://github.com/seu-usuario/MBMobileAppMotos.git
-cd MBMobileAppMotos
-Instale as dependências:
-
-bash
-Copiar código
 npm install
-# ou
-yarn install
-Inicie o aplicativo:
-
-bash
-Copiar código
-npx expo start
-✨ Pronto!
-Agora é só escanear o QR Code com o app do Expo Go e aproveitar!
-
-👥 Autores
-
-Miguel Barros Ramos
-
-Pedro Valentim
-
-Larissa Muniz
-
+npx expo start --tunnel
+ 
